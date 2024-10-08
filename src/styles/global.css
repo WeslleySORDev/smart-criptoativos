@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-white antialiased;
+  }
+}
+
+@layer components {
+  .cut-through {
+    position: relative;
+    display: inline-block;
+    font-size: 2rem;
+    width: fit-content;
+    margin-block: auto;
+  }
+
+  .cut-through::before,
+  .cut-through::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #ff3900;
+    top: 50%;
+    left: 0;
+    transform-origin: center;
+  }
+
+  .cut-through::before {
+    transform: rotate(8deg);
+  }
+
+  .cut-through::after {
+    transform: rotate(-8deg);
+  }
+}
