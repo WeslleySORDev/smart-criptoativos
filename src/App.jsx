@@ -18,6 +18,7 @@ import { SeeThePlans } from './screens/see-the-plans'
 import { Smart } from './screens/smart'
 import { TalkToUs } from './screens/talk-to-us'
 import { WhatWillYouSee } from './screens/what-will-you-see'
+import { Footer } from './screens/footer'
 
 const telefone = '5511933724537'
 
@@ -73,6 +74,7 @@ export default function App() {
       <Guarantee />
       <FrequentlyAskedQuestions />
       <TalkToUs />
+      <Footer />
 
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
         <DialogTrigger asChild>

@@ -13,6 +13,9 @@ export const SeeThePlans = () => {
               <ul className="divide-y divide-[#7ed956] text-[16px]/[1.2em] font-medium capitalize text-[#f8f8f8] md:text-[2.5vw] lg:text-[1.5vw] [&>li]:pb-[16px] [&>li]:pt-[16px] [&>li_ul]:mt-[8px]">
                 <li className="capitalize">12 MÓDULOS DE ANÁLISE TÉCNICA</li>
                 <li className="capitalize">
+                  MATERIAIS COMPLEMENTARES EM “PDF”
+                </li>
+                <li className="capitalize">
                   2 E-BOOKS – EXCLUSIVOS
                   <ul className="pt-0 font-sora text-[14.592px] text-[#7a7a7a] lg:text-[16px]">
                     <li className="capitalize">Guia do Metaverso</li>
@@ -22,7 +25,12 @@ export const SeeThePlans = () => {
                   </ul>
                 </li>
                 <li className="capitalize">
-                  MATERIAIS COMPLEMENTARES EM “PDF”
+                  FERRAMENTAS EXCLUSIVAS DE ANÁLISE TÉCNICA
+                  <ul className="pt-0 font-sora text-[14.592px] text-[#7a7a7a] lg:text-[16px]">
+                    <li className="capitalize">
+                      Coinglass, Bgeometrics, Bitbo, entre outras.
+                    </li>
+                  </ul>
                 </li>
                 <li className="capitalize">
                   2 MÓDULOS EXCLUSIVOS DE INFORMÁTICA APLICADA
@@ -62,7 +70,7 @@ export const SeeThePlans = () => {
                 className="items-baseline text-[17px]/[1] uppercase"
               >
                 <a href="http://" target="_blank" rel="noopener noreferrer">
-                  Entrar para lista de espera
+                  Adquira Já
                 </a>
               </Button>
 
