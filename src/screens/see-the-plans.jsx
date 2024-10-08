@@ -77,6 +77,20 @@ export const SeeThePlans = () => {
               <p className="mt-[6px] text-center text-[14.592px] lg:text-[16px]">
                 Pagamento feito pela Plataforma Hotmart
               </p>
+
+              <div className="flex items-center justify-center gap-2 text-lg underline underline-offset-4 lg:text-xl">
+                <img
+                  className="size-10 lg:size-14"
+                  src="/icons/youtube.svg"
+                  alt=""
+                />
+                <a
+                  href="https://www.youtube.com/@smartcriptoativos"
+                  target="__blank"
+                >
+                  SMART CRIPTOATIVOS
+                </a>
+              </div>
             </div>
           </div>
         </div>

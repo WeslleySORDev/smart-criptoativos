@@ -4,6 +4,11 @@ export const Footer = () => {
       <span className="text-xs lg:text-sm">
         © 2024. Todos os direitos reservados.
       </span>
+
+      <a href="mailto:suporte@smartcriptoativos.com">
+        suporte@smartcriptoativos.com
+      </a>
+
       <div className="flex items-center gap-2 text-xs underline underline-offset-4 lg:text-sm">
         <img
           className="h-6 w-6 lg:h-10 lg:w-10"

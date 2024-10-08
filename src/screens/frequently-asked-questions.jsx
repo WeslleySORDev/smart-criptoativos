@@ -83,6 +83,19 @@ export const FrequentlyAskedQuestions = () => {
             </AccordionItem>
           ))}
         </Accordion>
+
+        <p className="px-[10px] text-justify text-xs text-[#cccccc] md:text-sm lg:text-base">
+          Aviso Importante: O curso Smart CriptoTrader é exclusivamente
+          educacional e tem como objetivo fornecer informações sobre análise
+          técnica e o mercado de criptoativos. Nenhuma das aulas e informações
+          apresentadas deve ser interpretada como aconselhamento financeiro,
+          recomendação de compra ou venda de qualquer criptoativo. Todos os
+          exemplos e estratégias ensinados e compartilhados são para fins
+          didáticos e podem não refletir as condições reais do mercado. Investir
+          em criptoativos envolve riscos, e os participantes devem realizar suas
+          próprias pesquisas e análises antes de tomar qualquer decisão de
+          investimento.
+        </p>
       </div>
     </section>
   )
