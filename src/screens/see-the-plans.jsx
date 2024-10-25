@@ -101,7 +101,7 @@ export const SeeThePlans = () => {
                 </a>
               </div>
               <img
-                className="mx-auto w-64"
+                className="mt-8 mx-auto w-64"
                 src="/assets/see-the-plans/black_friday.png"
               />
             </div>
