@@ -24,11 +24,6 @@ const data = [
       'O curso estará disponível por 1 ano, permitindo que você estude no seu próprio ritmo e revise o conteúdo sempre que precisar.',
   },
   {
-    question: 'Como funciona a estrutura do curso?',
-    response:
-      'O curso é dividido em 12 módulos, o 1º Módulo vai ter liberação Imediata, os demais serão liberados aproximadamente a cada 20 dias, pode ser antes desse prazo. Cada módulo é elaborado para construir seu conhecimento gradualmente, visando fixar bem o conteúdo.',
-  },
-  {
     question: 'Quais são as opções de pagamento?',
     response:
       'Você pode efetuar o pagamento via PIX ou cartão de crédito e outras formas de pagamento pela plataforma Hotmart, garantindo uma experiência de compra segura e prática.',
