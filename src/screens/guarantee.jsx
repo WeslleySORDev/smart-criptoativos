@@ -1,7 +1,5 @@
 import { Button } from '../components/button'
 
-const data = 'url do curso'
-
 export const Guarantee = () => {
   return (
     <section className="bg-[#7ed956]">
@@ -24,7 +22,11 @@ export const Guarantee = () => {
           asChild
           className="mx-auto w-fit from-[#ffffff] to-[#eeeeee] text-[#2a4121]"
         >
-          <a href={data} target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://pay.hotmart.com/N96069257H"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Quero alcançar a liberdade
           </a>
         </Button>

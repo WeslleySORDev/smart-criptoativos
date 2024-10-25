@@ -121,7 +121,11 @@ export const IsItForYou = () => {
             </div>
 
             <Button asChild className="items-baseline gap-[5px]">
-              <a href="http://" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://pay.hotmart.com/N96069257H"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   src="/icons/lock-open.svg"
                   alt=""

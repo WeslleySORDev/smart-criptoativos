@@ -24,7 +24,13 @@ export const Smart = () => {
           </p>
 
           <Button className="mx-[10px] mt-auto w-full">
-            Quero alcançar a liberdade
+            <a
+              href="https://pay.hotmart.com/N96069257H"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Quero alcançar a liberdade
+            </a>
           </Button>
         </div>
       </div>
