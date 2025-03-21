@@ -69,6 +69,11 @@ export const SeeThePlans = () => {
                 à vista por R$ 1.169,10
               </h3>
 
+              <p className="mb-4 flex flex-col gap-[10px_20px] text-center text-2xl font-bold uppercase text-[#7ed956] md:text-[3.5vw] lg:text-[2.5vw]">
+                CUPOM DESCONTO 30%:{' '}
+                <span className="text-4xl lg:text-[4vw]">SMART30</span>
+              </p>
+
               <Button
                 asChild
                 className="items-baseline text-[17px]/[1] uppercase"
@@ -99,10 +104,6 @@ export const SeeThePlans = () => {
                   SMART CRIPTOATIVOS
                 </a>
               </div>
-              <img
-                className="mx-auto mt-8 w-64"
-                src="/assets/see-the-plans/black_friday.png"
-              />
             </div>
           </div>
         </div>
