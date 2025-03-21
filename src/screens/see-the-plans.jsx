@@ -12,29 +12,23 @@ export const SeeThePlans = () => {
               </h2>
               <ul className="divide-y divide-[#7ed956] text-[16px]/[1.2em] font-medium capitalize text-[#f8f8f8] md:text-[2.5vw] lg:text-[1.5vw] [&>li]:pb-[16px] [&>li]:pt-[16px] [&>li_ul]:mt-[8px]">
                 <li className="capitalize">
-                  MAIS DE 12 MÓDULOS DE ANÁLISE TÉCNICA
+                  MAIS DE 12 MÓDULOS DE ANÁLISE TÉCNICA PARA O MERCADO CRIPTO
                 </li>
                 <li className="capitalize">
-                  MATERIAIS COMPLEMENTARES EM “PDF”
+                  EXERCÍCIOS E MATERIAIS COMPLEMENTARES EM “PDF” – CADA MÓDULO
                 </li>
                 <li className="capitalize">
                   ATUALIZAÇÕES SEMANAIS DO MERCADO CRIPTO
                 </li>
-                <li className="capitalize">CANAL EXCLUSIVO PARA DÚVIDAS</li>
                 <li className="capitalize">
-                  2 E-BOOKS EXCLUSIVOS PARA OS ALUNOS
-                  <ul className="pt-0 font-sora text-[14.592px] text-[#7a7a7a] lg:text-[16px]">
-                    <li className="capitalize">Guia do Metaverso</li>
-                    <li className="capitalize">
-                      Manual da Blockchain - Tecnologia do Futuro
-                    </li>
-                  </ul>
+                  GRUPO EXCLUSIVO PARA DÚVIDAS – DISCORD E/OU HOTMART
                 </li>
                 <li className="capitalize">
                   FERRAMENTAS EXCLUSIVAS DE ANÁLISE TÉCNICA
                   <ul className="pt-0 font-sora text-[14.592px] text-[#7a7a7a] lg:text-[16px]">
                     <li className="capitalize">
-                      Coinglass, Bgeometrics, Bitbo, entre outras.
+                      COINGLASS, BGEOMETRICS, DEXSCREENER, DEXTOOLS, CRYPTO
+                      BUBBLES, CRYPTORANK entre outras.
                     </li>
                   </ul>
                 </li>
@@ -49,10 +43,19 @@ export const SeeThePlans = () => {
                     </li>
                   </ul>
                 </li>
+                <li className="capitalize">
+                  2 E-BOOKS EXCLUSIVOS PARA OS ALUNOS
+                  <ul className="pt-0 font-sora text-[14.592px] text-[#7a7a7a] lg:text-[16px]">
+                    <li className="capitalize">Guia do Metaverso</li>
+                    <li className="capitalize">
+                      Manual da Blockchain - Tecnologia do Futuro
+                    </li>
+                  </ul>
+                </li>
               </ul>
               <div className="flex w-full justify-center">
                 <h3 className="cut-through mb-[10px] text-center text-[50px]/[1em] font-semibold uppercase text-[#ff3900]">
-                  R$ 2890,00
+                  R$ 3950,00
                 </h3>
               </div>
             </div>
@@ -66,8 +69,9 @@ export const SeeThePlans = () => {
                 à vista por R$ 1.169,10
               </h3>
 
-              <p className="flex flex-col gap-[10px_20px] text-center text-2xl font-bold uppercase text-[#7ed956] md:text-[3.5vw] lg:text-[2.5vw] mb-4">
-                CUPOM DESCONTO 10%: <span className='text-4xl lg:text-[4vw]'>BLACK10</span>
+              <p className="mb-4 flex flex-col gap-[10px_20px] text-center text-2xl font-bold uppercase text-[#7ed956] md:text-[3.5vw] lg:text-[2.5vw]">
+                CUPOM DESCONTO 10%:{' '}
+                <span className="text-4xl lg:text-[4vw]">BLACK10</span>
               </p>
 
               <Button
@@ -101,7 +105,7 @@ export const SeeThePlans = () => {
                 </a>
               </div>
               <img
-                className="mt-8 mx-auto w-64"
+                className="mx-auto mt-8 w-64"
                 src="/assets/see-the-plans/black_friday.png"
               />
             </div>
