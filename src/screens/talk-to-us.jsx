@@ -22,7 +22,7 @@ export const TalkToUs = () => {
               Aponte a camêra do seu celular para o QR Code
             </p>
             <img
-              src="/assets/qr_code.jpg"
+              src="/assets/qrcode.jpeg"
               className="mx-auto h-48 w-48"
               alt=""
             />

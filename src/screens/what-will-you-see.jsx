@@ -11,117 +11,295 @@ const data = [
   '8.png',
 ]
 
+// const old_modules = [
+//   {
+//     title: 'Introdução ao Mercado de Criptoativos',
+//     content: [
+//       'Introdução aos Criptoativos: O que são e como funcionam.',
+//       'História do Bitcoin: A origem e evolução do Bitcoin.',
+//       'Adoção de Bitcoin e Altcoins: Difusão do uso de criptoativos no mundo.',
+//       'Funcionamento do Blockchain: A tecnologia por trás das criptomoedas.',
+//     ],
+//   },
+//   {
+//     title:
+//       ' Principais Criptomoedas: Uma visão geral das criptomoedas mais relevantes.',
+//     content: [
+//       'Exchanges e Plataformas de Negociação: Onde comprar e vender criptoativos.',
+//       'Carteiras Digitais (Wallets): Tipos de carteiras e como armazenar criptomoedas.',
+//       'Riscos e Oportunidades no Mercado: Análise dos desafios e potencial de ganhos no mercado de criptoativos.',
+//       'Trader Iniciante: Lidando com a alta volatilidade do Mercado de Criptoativos.',
+//     ],
+//   },
+//   {
+//     title: 'Fundamentos da Análise Técnica',
+//     content: [
+//       'Fundamentos da Análise Técnica: Introdução aos conceitos e princípios básicos.',
+//       'Princípios Essenciais: Explicação dos pilares fundamentais da análise técnica.',
+//       'Leitura e Interpretação de Gráficos: Como interpretar diferentes tipos de gráficos.',
+//       'Indicadores Técnicos Clássicos: Introdução a indicadores como médias móveis e RSI.',
+//     ],
+//   },
+//   {
+//     title:
+//       'Psicologia do Trader e do Mercado: Comportamento e emoções no mercado.',
+//     content: [
+//       'Análise de Volume e Volatilidade: Interpretação do volume de negociação e volatilidade.',
+//       'Análise de tempos gráficos: Escolha e utilização de diferentes períodos de tempo no gráfico.',
+//       'Gerenciamento de Risco e Limitações: Identificação dos riscos e limites da análise técnica.',
+//       'Tipos de Trade: Identifique o seu perfil de Trader (Scalping, Daytrade, Swingtrade, position trade, trade por arbitragem entre outros)',
+//     ],
+//   },
+//   {
+//     title: 'Explorando a Ferramenta TradingView',
+//     content: [
+//       'Interface do TradingView: Navegação e principais seções.',
+//       'Configuração de Gráficos: Personalização de tipos e estilos.',
+//       'Ferramentas de Desenho: Linhas, Fibonacci e formas.',
+//       'Alertas: Configuração de alertas de preço e condições.',
+//       'Lista de Interesse: Criação e organização de listas de ativos.',
+//     ],
+//   },
+//   {
+//     title:
+//       'Tempos Gráficos Personalizados: Ajuste de intervalos de tempo no TradingView',
+//     content: [
+//       'Ferramenta de Medição: Medir distâncias de preço e tempo no gráfico.',
+//       'Multi-Gráficos: Visualização de vários gráficos simultaneamente.',
+//       'Exportação de Dados: Como exportar dados do gráfico para planilhas.',
+//       'Feed de Notícias: Integração de notícias de mercado em tempo real.',
+//     ],
+//   },
+//   {
+//     title: 'Dominando a Análise Técnica',
+//     content: [
+//       'Teoria de Dow: Princípios básicos e importância na análise técnica.',
+//       'Candlesticks: Básicos e Avançados: Padrões simples e complexos de candles.',
+//       'Price Action com Candlesticks: Interpretação da ação do preço através de candles.',
+//       'Suportes, Resistências e Pontos Pivot: Identificação de zonas chave no gráfico.',
+//       'Ondas de Elliott e Tempos Gráficos: Estrutura de mercado e análise de ciclos.',
+//     ],
+//   },
+//   {
+//     title:
+//       'Introdução ao Fibonacci: Conceitos iniciais sobre o uso de Fibonacci.',
+//     content: [
+//       'Extensão e Retração de Fibonacci: Como aplicar essas ferramentas para projeções.',
+//       'Uso Correto do MACD: Interpretação e aplicação do indicador MACD.',
+//       'Índice de Força Relativa (RSI): Como medir a força de uma tendência.',
+//       'Médias Móveis (MA e EMA): Compreensão e uso das médias móveis simples e exponenciais.',
+//       'Padrões Gráficos: Identificação de padrões para previsão de movimentos futuros.',
+//     ],
+//   },
+//   {
+//     title: 'Introdução a Mercado Futuros ',
+//     content: [
+//       'Riscos Elevados: Operar futuros é arriscado, podendo resultar em perdas totais, especialmente com alavancagem.',
+//       'Futuros no Mercado Cripto: Contratos que permitem apostar na valorização (long) ou desvalorização (short) de um criptoativo.',
+//       'Alavancagem: Amplia os ganhos e as perdas, permitindo operar com mais do que se tem na conta.',
+//       'Margem Isolada: Limita as perdas a uma única posição específica.',
+//       'Margem Cross: Usa o saldo total da conta, aumentando o risco de perda completa.',
+//     ],
+//   },
+//   {
+//     title: 'Liquidação em Futuros: Protegendo a Margem Disponível.',
+//     content: [
+//       'Stop-Loss e Take-Profit: Ferramentas para sair automaticamente da operação, limitando perdas ou garantindo lucros.',
+//       'Estratégias Básicas: Long para ganhos em alta e Short para ganhos em queda.',
+//       'Disciplina no Trading: Importante manter controle emocional e definir limites para evitar grandes perdas.',
+//     ],
+//   },
+//   {
+//     title: 'DEFI e Montagem de Pool na Uniswap',
+//     content: [
+//       'Introdução ao DeFi (Finanças Descentralizadas) - Explicação básica sobre o conceito de DeFi e seu papel no mercado de criptoativos.',
+//       'O que é a Uniswap? - Visão geral da Uniswap como uma exchange descentralizada e sua importância no ecossistema DeFi.',
+//       'Entendendo Liquidez e Pools de Liquidez - Explicação de como funcionam as pools de liquidez e a importância de provedores de liquidez (LPs).',
+//     ],
+//   },
+//   {
+//     title: 'Como Montar uma Pool de Liquidez na Uniswap',
+//     content: [
+//       'Riscos e Recompensas de Fornecer Liquidez - Análise dos riscos de “impermanent loss” e das recompensas ao prover liquidez.',
+//       'Tokens de Liquidez (LP Tokens) - O que são LP Tokens e como eles funcionam dentro de pools de liquidez.',
+//     ],
+//   },
+// ]
+
 const modules = [
   {
-    title: 'Introdução ao Mercado de Criptoativos',
+    title: 'Apresentação e avisos importantes',
     content: [
-      'Introdução aos Criptoativos: O que são e como funcionam.',
-      'História do Bitcoin: A origem e evolução do Bitcoin.',
-      'Adoção de Bitcoin e Altcoins: Difusão do uso de criptoativos no mundo.',
-      'Funcionamento do Blockchain: A tecnologia por trás das criptomoedas.',
+      '0.1 - APRESENTAÇÃO E BOAS VINDAS AOS ALUNOS - ATENÇÃO: TERMO DE RESPONSABILIDADE DOS ALUNOS',
+      '0.2 - CRONOGRAMA E DURAÇÃO MÉDIA DO CURSO SMART CRIPTOTRADER',
+      '0.3 - GLOSSÁRIO DO TRADER DO MERCADO CRIPTO - ATENÇÃO: AS AULAS SÃO TEÓRICAS E PRÁTICAS EM CADA MÓDULO',
+    ],
+  },
+  {
+    title: 'Módulo 01 - Introdução ao mercado de criptoativos',
+    content: [
+      'TOUR: PRINCIPAIS FERRAMENTAS UTILIZADAS NO MERCADO CRIPTO',
+      '1.1 - INTRODUÇÃO AO MERCADO DE CRIPTOATIVOS',
+      '1.2 - HISTÓRIA DO BITCOIN: A ORIGEM E EVOLUÇÃO',
+      '1.3 - ADOÇÃO DO BITCOIN E ALTCOINS: DIFUSÃO DO USO DE CRIPTOATIVOS PELO MUNDO',
+      '1.4 - FUNCIONAMENTO DA BLOCKCHAIN: A TECNOLOGIA POR TRÁS DAS CRIPTOMOEDAS',
+      '(BÔNUS) AULA PRÁTICA 01 - INTRODUÇÃO À FERRAMENTA COINMARKETCAP',
+      '(BÔNUS) AULA PRÁTICA 02 - INTRODUÇÃO A FERRAMENTA COINGECKO',
+      '(BÔNUS) AULA PRÁTICA 03 - INTRODUÇÃO A FERRAMENTA DEXSCREENER',
+      '(BÔNUS) AULA PRÁTICA 04 - INTRODUÇÃO A FERRAMENTA DEXTOOLS',
+      '(BÔNUS) AULA PRÁTICA 05 - INTRODUÇÃO A FERRAMENTA DEFILlAMA',
+      '(BÔNUS) AULA PRÁTICA 06 - EXPLORANDO A FERRAMENTA CRYPTOBUBBLES',
+      '1.5 - RESUMO DO MÓDULO E CONSIDERAÇÕES FINAIS',
+      '1.6 - MATERIAL COMPLEMENTAR E EXERCÍCIOS DE FIXAÇÃO',
+    ],
+  },
+  {
+    title: 'Módulo 02 - Principais criptomoedas: Uma visão geral',
+    content: [
+      '2.1 - EXCHANGES E PLATAFORMAS DE NEGOCIAÇÃO: ONDE COMPRAR A VENDER CRIPTOATIVOS',
+      '2.2 - CARTEIRAS DIGITAIS(WALLETS): TIPOS DE CARTEIRAS E COMO ARMAZENAR CRIPTOMOEDAS',
+      '2.3 - RISCOS E OPORTUNIDADES NO MERCADO: ANÁLISE DOS DESAFIOS E POTENCIAL DE GANHOS DO MERCADO DE CRIPTOATIVOS',
+      '2.4 - TRADER INICIANTE: LIDANDO COM A ALTA VOLATILIDADE DO MERCADO CRIPTO',
+      '(BÔNUS) AULA PRÁTICA 01 - EXPLODANDO EXCHANGES(CEX) - TIPOS E CONFIGURAÇÕES',
+      '(BÔNUS) AULA PRÁTICA 02 - EXPLODANDO EXCHANGES DESCENTRALIZADAS(DEX), WALLETS DIGITAIS E SWAPS NAS REDES',
+      'MATERIAL COMPLEMENTAR E EXERCÍCIOS DE FIXAÇÃO',
+    ],
+  },
+  {
+    title: 'Modulo 03 - Fundamentos da análise técnica',
+    content: [
+      '3.1 - FUNDAMENTOS DA ANÁLISE TÉCNICA: INTRODUÇÃO AOS CONCEITOS E PRINCÍPIOS BÁSICOS',
+      '3.2 - PRINCÍPIOS ESSENCIAIS: EXPLICAÇÃO DOS PILARES FUNDAMENTAIS DA ANÁLISE TÉCNICA',
+      '3.3 - LEITURA E INTERPRETAÇÃO DE GRÁFICOS: COMO INTERPRETAR DIFERENTES TIPOS DE GRÁFICOS',
+      '3.4 - INDICADORES TÉCNICOS CLÁSSICOS: INTRODUÇÃO A INDICADORES COMO MÉDIAS MÓVEIS E RSI',
+      '(BÔNUS) AULA PRÁTICA 01 - INTRODUÇÃO A FERRAMENTA TRADINGVIEW - VERSÃO GRATUITA',
+      '(BÔNUS) AULA PRÁTICA 02 - INTRODUÇÃO AO INDICADOR RSI (IFR - ÍNDICE DE FORÇA RELATIVA)',
+      '(BÔNUS) AULA PRÁTICA 03 - INTRODUÇÃO AS MÉDIAS MÓVEIS (EMA) - 09, 20, 50, 100 E 200 PERÍODOS',
+      'MATERIAL COMPLEMENTAR E EXERCÍCIOS DE FIXAÇÃO',
     ],
   },
   {
     title:
-      ' Principais Criptomoedas: Uma visão geral das criptomoedas mais relevantes.',
+      'Módulo 04 - Psicologia do trader e do mercado: Comportamento e emoções',
     content: [
-      'Exchanges e Plataformas de Negociação: Onde comprar e vender criptoativos.',
-      'Carteiras Digitais (Wallets): Tipos de carteiras e como armazenar criptomoedas.',
-      'Riscos e Oportunidades no Mercado: Análise dos desafios e potencial de ganhos no mercado de criptoativos.',
-      'Trader Iniciante: Lidando com a alta volatilidade do Mercado de Criptoativos.',
+      '4.1 - ANÁLISE DE VOLUME E VOLATILIDADE: INTERPRETAÇÃO DO VOLUME DE NEGOCIAÇÃO E VOLATILIDADE',
+      '4.2 - ANÁLISE DE TEMPOS GRÁFICOS: ESCOLHA E UTILIZAÇÃO DE DIFERENTES PERÍODOS DE TEMPO GRÁFICO',
+      '4.3 - GERENCIAMENTO DE RISCO E LIMITAÇÕES: IDENTIFICAÇÃO DOS RISCOS E LIMITES DA ANÁLISE TÉCNICA',
+      '4.4 - TIPOS DE TRADE: IDENTIFIQUE O SEU PERFIL DE TRADER(SCALPING, DAYTRADE, SWINGTRADE, POSITION TRADE, TRADE POR ARBITRAGEM ENTRE OUTROS)',
+      "(BÔNUS) AULA PRÁTICA 01 - INDICADOR DE VOLUME TRADICIONAL E INDICADOR TÉCNICO 'VOLUME PRO'",
+      '(BÔNUS) AULA PRÁTICA 02 - INDICADOR DE VOLUME PROFILE - IDENTIFICAÇÃO DO PONTO DE CONTROLE - POC',
+      '(BÔNUS) AULA PRÁTICA 03 -INDICADOR PERFIL SCALPING E DAYTRADE - VWAP BAND E RSI',
+      '4.5 - MATERIAL COMPLEMENTAR E EXERCÍCIOS DE FIXAÇÃO',
     ],
   },
   {
-    title: 'Fundamentos da Análise Técnica',
+    title: 'Módulo 05 - Explorando a ferramenta tradingview',
     content: [
-      'Fundamentos da Análise Técnica: Introdução aos conceitos e princípios básicos.',
-      'Princípios Essenciais: Explicação dos pilares fundamentais da análise técnica.',
-      'Leitura e Interpretação de Gráficos: Como interpretar diferentes tipos de gráficos.',
-      'Indicadores Técnicos Clássicos: Introdução a indicadores como médias móveis e RSI.',
-    ],
-  },
-  {
-    title:
-      'Psicologia do Trader e do Mercado: Comportamento e emoções no mercado.',
-    content: [
-      'Análise de Volume e Volatilidade: Interpretação do volume de negociação e volatilidade.',
-      'Análise de tempos gráficos: Escolha e utilização de diferentes períodos de tempo no gráfico.',
-      'Gerenciamento de Risco e Limitações: Identificação dos riscos e limites da análise técnica.',
-      'Tipos de Trade: Identifique o seu perfil de Trader (Scalping, Daytrade, Swingtrade, position trade, trade por arbitragem entre outros)',
-    ],
-  },
-  {
-    title: 'Explorando a Ferramenta TradingView',
-    content: [
-      'Interface do TradingView: Navegação e principais seções.',
-      'Configuração de Gráficos: Personalização de tipos e estilos.',
-      'Ferramentas de Desenho: Linhas, Fibonacci e formas.',
-      'Alertas: Configuração de alertas de preço e condições.',
-      'Lista de Interesse: Criação e organização de listas de ativos.',
+      '5.1 - INTERFACE DO TRADINGVIEW: NAVEGAÇÃO E PRINCIPAIS SEÇÕES',
+      '5.2 - CONFIGURAÇÃO DOS GRÁFICOS: PERSONALIZAÇÃODE TIPOS E ESTILOS',
+      '5.3 - FERRAMENTAS DE DESENHO: LINHAS, FIBONACCI E FORMAS',
+      '5.4 - ALERTAS: CONFIGURAÇÃO DE ALERTAS DE PREÇO E CONDIÇÕES TRADINGVIEW',
+      '5.5 - LISTA DE INTERESSE: CRIAÇÃO E ORGANIZAÇÃO DE LISTAS DE ATIVOS',
+      '(BÔNUS) AULA PRÁTICA 01 - PRATICANDO NO TRADINGVIEW - RECURSOS INICIAIS',
+      '(BÔNUS) AULA PRÁTICA 02 - COMPARANDO O TRADINGVIEW - GRATUITO X VERSÃO PAGA',
+      '(BÔNUS) AULA PRÁTICA 03 - TRADINGVIEW - FERRAMENTAS DE DESENHO E FIBONACCI NA PRÁTICA',
+      '(BÔNUS) AULA PRÁTICA 04 - TRADINGVIEW - CONFIGURANDO ALERTA E LISTA DE INTERESSE',
+      '5.7 - MATERIAL COMPLEMENTAR E EXERCÍCIOS DE FIXAÇÃO',
     ],
   },
   {
     title:
-      'Tempos Gráficos Personalizados: Ajuste de intervalos de tempo no TradingView',
+      'Módulo 06 - Tempos gráficos personalizados: Ajuste de intervalos de tempo do tradingview',
     content: [
-      'Ferramenta de Medição: Medir distâncias de preço e tempo no gráfico.',
-      'Multi-Gráficos: Visualização de vários gráficos simultaneamente.',
-      'Exportação de Dados: Como exportar dados do gráfico para planilhas.',
-      'Feed de Notícias: Integração de notícias de mercado em tempo real.',
+      '6.1 - FERRAMENTA DE MEDIÇÃO: MEDIR DISTÂNCIAS DE PREÇO E TEMPO NO GRÁFICO',
+      '6.2 - MULTI-GRÁFICOS: VISUALIZAÇÃO DE VÁRIOS GRÁFICOS SIMULTANEAMENTE',
+      '6.3 - EXPORTAÇÃO DE DADOS: COMO EXPORTAR DADOS DO GRÁFICO PARA PLANILHAS',
+      '6.4 - FEED DE NOTÍCIAS: INTEGRAÇÃO DE NOTÍCIAS DE MERCADO EM TEMPO REAL',
+      '(BÔNUS) AULA PRÁTICA 01 - TRADINGVIEW - MULTI-GRÁFICOS NA PRÁTICA',
+      '(BÔNUS) AULA PRÁTICA 02 - TRADINGVIEW - FEED DE NOTÍCIAS NA PRÁTICA',
+      '(BÔNUS) AULA PRÁTICA 03 - TRADINGVIEW - INDICADOR LOG TREND CHANNEL - ESCALA LOGARÍTMICA',
+      '6.5 - MATERIAL COMPLEMENTAR E EXERCÍCIOS DE FIXAÇÃO',
     ],
   },
   {
-    title: 'Dominando a Análise Técnica',
+    title: 'Módulo 07 - Dominando a análise técnica',
     content: [
-      'Teoria de Dow: Princípios básicos e importância na análise técnica.',
-      'Candlesticks: Básicos e Avançados: Padrões simples e complexos de candles.',
-      'Price Action com Candlesticks: Interpretação da ação do preço através de candles.',
-      'Suportes, Resistências e Pontos Pivot: Identificação de zonas chave no gráfico.',
-      'Ondas de Elliott e Tempos Gráficos: Estrutura de mercado e análise de ciclos.',
+      '7.1 - TEORIA DE DOW: PRINCÍPIOS BÁSICOS E A NUVEM DE ICHIMOKU NA ANÁLISE TÉCNICA',
+      '7.2 - PRICE ACTION COM CANDLESTICKS: INTERPRETAÇÃO DA AÇÃO DO PREÇO ATRAVÉS DE CANDLES',
+      '7.3 - CANDLESTICKS: BÁSICOS E AVANÇADOS E INDICADOR TÉCNICO CANAL GAUSSIANO',
+      '7.4 - SUPORTES, RESISTÊNCIAS E PONTOS DE PIVOT E O INDICADOR TÉCNICO BANDAS DE BOLINGER',
+      '7.5 - ONDAS DE ELIOT E TEMPOS GRÁFICOS: ESTRUTURA DE MERCADO E INDICADOR CANAL DE KELTNER',
+      '(BÔNUS) AULA PRÁTICA 01 - TRADINGVIEW - INDICADOR NUVEM DE ICHIMOKU - CONFIGURAÇÃO E FUNCIONALIDADES',
+      '(BÔNUS) AULA PRÁTICA 02 - TRADINGVIEW - INDICADOR TÉCNICO CANAL GAUSSIANO',
+      '(BÔNUS) AULA PRÁTICA 03 - TRADINGVIEW - INDICADOR TÉCNICO BANDAS DE BOLLINGER E ANCORAGEM FIBONACCI E MACD',
+      '(BÔNUS) AULA PRÁTICA 04 - TRADINGVIEW -  ONDAS DE ELLIOTT E INDICADOR TÉCNICO CANAL DE KELTNER',
+      '(BÔNUS) AULA PRÁTICA 05 - TRADINGVIEW - CONFIGURAÇÃO E UTILIZAÇÃO DO INDICADOR TÉCNICO VMC',
+      'MATERIAL COMPLEMENTAR E EXERCÍCIOS DE FIXAÇÃO',
     ],
   },
   {
     title:
-      'Introdução ao Fibonacci: Conceitos iniciais sobre o uso de Fibonacci.',
+      'Módulo 08 - Introdução ao fibonacci: Conceitos iniciais sobre o uso de fibonacci',
     content: [
-      'Extensão e Retração de Fibonacci: Como aplicar essas ferramentas para projeções.',
-      'Uso Correto do MACD: Interpretação e aplicação do indicador MACD.',
-      'Índice de Força Relativa (RSI): Como medir a força de uma tendência.',
-      'Médias Móveis (MA e EMA): Compreensão e uso das médias móveis simples e exponenciais.',
-      'Padrões Gráficos: Identificação de padrões para previsão de movimentos futuros.',
+      '8.1 - EXTENSÃO E RETRAÇÃO DE FIBONACCI: COMO APLICAR ESSAS FERRAMENTAS PARA PROJEÇÕES',
+      '8.2 - USO CORRETO DO MACD: INTERPRETAÇÃO E APLICAÇÃO DO INDICADOR MACD',
+      '8.3 - ÍNDICE DE FORÇA RELATIVA(RSI) e MÉDIAS MÓVEIS(MA E EMA): COMPREENSÃO E APLICABILIDADE NA ANÁLISE GRÁFICA',
+      '8.4 - PADRÕES GRÁFICOS: INDENTIFICAÇÃO DE PADRÕES PARA PREVISÃO DE MOVIMENTOS FUTUROS',
+      '(BÔNUS) AULA PRÁTICA 01 - TRADINGVIEW - UTILIZAÇÃO DA RETRAÇÃO E EXTENSÃO DE FIBONACCI NO MERCADO CRIPTO',
+      '(BÔNUS) AULA PRÁTICA 02 - TRADINGVIEW - UTILIZAÇÃO DO INDICADOR MACD - MÉDIA MÓVEL CONVERGENTE E DIVERGENTE',
+      '(BÔNUS) AULA PRÁTICA 03 - TRADINGVIEW -  ÍNDICE DE FORÇA RELATIVA(RSI) e MÉDIA MÓVEL EXPONENCIAL(EMA): SETUP NA ANÁLISE GRÁFICA',
+      '(BÔNUS) AULA PRÁTICA 04 - TRADINGVIEW -  UTLIZAÇÃO DE PADRÕES GRÁFICOS NA ANÁLISE TÉCNICA',
+      'MATERIAL COMPLEMENTAR E EXERCÍCIOS DE FIXAÇÃO',
     ],
   },
   {
-    title: 'Introdução a Mercado Futuros ',
+    title: 'Módulo 09 - Introdução a mercado futuros',
     content: [
-      'Riscos Elevados: Operar futuros é arriscado, podendo resultar em perdas totais, especialmente com alavancagem.',
-      'Futuros no Mercado Cripto: Contratos que permitem apostar na valorização (long) ou desvalorização (short) de um criptoativo.',
-      'Alavancagem: Amplia os ganhos e as perdas, permitindo operar com mais do que se tem na conta.',
-      'Margem Isolada: Limita as perdas a uma única posição específica.',
-      'Margem Cross: Usa o saldo total da conta, aumentando o risco de perda completa.',
+      '9.1 - INTRODUÇÃO E RISCOS ELEVADOS: OPERAR FUTUROS É ARRISCADO - PODENDO RESULTAR EM PERDAS TOTAIS, ESPECIALMENTE COM ALAVANCAGEM',
+      '9.2 - FUTUROS NO MERCADO CRIPTO: CONTRATOS QUE PERMITEM APOSTAR NA VALORIZAÇÃO(LONG) OU DESVALORIZAÇÃO(SHORT) DE UM CRIPTOATIVO',
+      '9.3 - ALAVANCAGEM: MARGEM ISOLADA E MARGEM CRUZADA(CROSS) - INTRODUÇÃO E CONFIGURAÇÃO NO MERCADO FUTUROS',
+      '(BÔNUS) AULA PRÁTICA 01 - TRADINGVIEW E BINANCE FUTURES - SETUP - BITCOIN CURTO PRAZO',
+      '(BÔNUS) AULA PRÁTICA 02 - TRADINGVIEW - INDICADOR TARGET PRO EMA 09 E 21 - FUTUROS',
+      '(BÔNUS) AULA PRÁTICA 03 - TRADINGVIEW - INDICADOR RSI LEVELs (IFR 14) - MERCADO FUTUROS BITCOIN',
+      '(BÔNUS) AULA PRÁTICA 05 - TRADINGVIEW E BYBIT FUTURES - INTRADAY - MANGEM CRUZADA BITCOIN',
+      'MATERIAL COMPLEMENTAR E EXERCÍCIOS DE FIXAÇÃO',
     ],
   },
   {
-    title: 'Liquidação em Futuros: Protegendo a Margem Disponível.',
+    title: 'Módulo 10 - Liquidação em futuros: Protegendo a margem disponível',
     content: [
-      'Stop-Loss e Take-Profit: Ferramentas para sair automaticamente da operação, limitando perdas ou garantindo lucros.',
-      'Estratégias Básicas: Long para ganhos em alta e Short para ganhos em queda.',
-      'Disciplina no Trading: Importante manter controle emocional e definir limites para evitar grandes perdas.',
+      '10.1 - STOP-LOSS E TAKE-PROFT: FERRAMENTAS PARA SAIR AUTOMATICAMENTE DA OPERAÇÃO, LIMITANDO PERDAS OU GARANTINDO LUCROS',
+      '10.2 -DISCIPLINA NO TRADING: IMPORTANTE MANTER CONTROLE EMOCIONAL E ESTRATÉGIAS DE LONG PARA GANHOS EM ALTA E SHORT PARA GANHOS EM QUEDA',
+      '(BÔNUS) AULA PRÁTICA 01 - TRADINGVIEW - INDICADOR SQUEEZER MOMENTUM - HISTOGRAMA',
+      '(BÔNUS) AULA PRÁTICA 02 - TRADINGVIEW - INDICADOR DE CICLO BITCOIN - TENDÊNCIA PRIMÁRIA DE DOW EM FUTUROS',
+      'MATERIAL COMPLEMENTAR E EXERCÍCIOS DE FIXAÇÃO',
     ],
   },
   {
-    title: 'DEFI e Montagem de Pool na Uniswap',
+    title: 'Módulo 11 - Introdução a defi e montagem de pool de liquidez',
     content: [
-      'Introdução ao DeFi (Finanças Descentralizadas) - Explicação básica sobre o conceito de DeFi e seu papel no mercado de criptoativos.',
-      'O que é a Uniswap? - Visão geral da Uniswap como uma exchange descentralizada e sua importância no ecossistema DeFi.',
-      'Entendendo Liquidez e Pools de Liquidez - Explicação de como funcionam as pools de liquidez e a importância de provedores de liquidez (LPs).',
+      '11.1 - INTRODUÇÃO AO DEFI (FINANÇAS DESCENTRALIZADAS) - CONCEITO DE DEFI E SEU PAPEL NO MERCADO DE CRIPTOATIVOS',
+      '11.2 - O QUE É A UNISWAP? - ENTENDENDO LIQUIDEZ E POOLS DE LIQUIDEZ - FUNCIONAMENTO E POOLS DE LIQUIDEZ DE OUTRAS REDES E A IMPORTÂNCIA DE PROVEDORES DE LIQUIDEZ(LPs)',
+      '(BÔNUS) AULA PRÁTICA 01 - TUOR - PLATAFORMAS DE POOL DE LIQUIDEZ - UNISWAP - ORCA - RAYDIUM - TRADEJOE - PANCAKESWAP',
+      '(BÔNUS) AULA PRÁTICA 02 - ENTENDENDO E EXPLORANDO A IMPORTÂNCIA DE LIQUIDEZ DE UM TOKEN',
+      'MATERIAL COMPLEMENTAR E EXERCÍCIOS DE FIXAÇÃO',
     ],
   },
   {
-    title: 'Como Montar uma Pool de Liquidez na Uniswap',
+    title: 'Módulo 12 - Como montar uma pool de liquidez',
     content: [
-      'Riscos e Recompensas de Fornecer Liquidez - Análise dos riscos de “impermanent loss” e das recompensas ao prover liquidez.',
-      'Tokens de Liquidez (LP Tokens) - O que são LP Tokens e como eles funcionam dentro de pools de liquidez.',
+      "12.1 - RISCOS E RECOMPENSAS DE FORNECER LIQUIDEZ - ANÁLISE DOS RISCOS DE 'IMPERMANENT' LOSS E DAS RECOMPENSAS DO PROVER LIQUIDEZ",
+      '12.2 - TOKENS DE LIQUIDEZ(LP TOKENS) - O QUE SÃO TOKENS E COMO ELES FUNCIONAM DENTRO DE POOLS DE LIQUIDEZ',
+      '(BÔNUS) AULA PRÁTICA 01 - BUSCANDO POOL DE LIQUIDEZ UNISWAP - CALCULADORA DE RENDIMENTOS',
+      '(BÔNUS) AULA PRÁTICA 02 - CONFIGURANDO E MONTANDO POOL DE LIQUIDEZ NA REDE SOLANA -  ORCA.SO E RAYDIUM.IO',
+      'MATERIAL COMPLEMENTAR E EXERCÍCIOS DE FIXAÇÃO',
+    ],
+  },
+  {
+    title: 'Módulo Bônus - Informática aplicada ao mercado cripto',
+    content: [
+      '(BÔNUS) AULA INFORMÁTICA - OTIMIZANDO MEU PC PARA O MERCADO DE CRIPTOATIVOS',
+      '(BÔNUS) AULA INFORMÁTICA - CUIDADOS E PROTEÇÃO CONTRA MALWARES E PHISHING NO MERCADO CRIPTO',
     ],
   },
 ]
@@ -416,15 +594,21 @@ export const WhatWillYouSee = () => {
           {modules.map(({ title, content }, index) => (
             <div className="md:flex md:gap-4" key={`${index}-${title}`}>
               <div className="flex">
-                <span className="mb-[25px] block h-fit w-full min-w-36 rounded-lg bg-zinc-800 px-4 py-8 text-center text-xl font-semibold uppercase text-[#7ed956] ring-1 ring-[#7ed956]">
-                  Módulo {index + 1}
-                </span>
+                {index === 0 ? (
+                  <span className="mb-[25px] block h-fit w-full min-w-36 md:w-[170px] rounded-lg bg-zinc-800 px-4 py-8 text-center text-xl font-semibold uppercase text-[#7ed956] ring-1 ring-[#7ed956]">
+                    Apresentação
+                  </span>
+                ) : (
+                  <span className="mb-[25px] block h-fit w-full min-w-36 md:w-[170px] rounded-lg bg-zinc-800 px-4 py-8 text-center text-xl font-semibold uppercase text-[#7ed956] ring-1 ring-[#7ed956]">
+                    Módulo {index}
+                  </span>
+                )}
               </div>
               <div>
                 <h3 className="text-[25px]/[1.2em] font-medium text-[#f8f8f8] md:text-[2.5vw] lg:text-[1.5vw]">
                   {title}
                 </h3>
-                <ul className="list-inside list-decimal pt-0 font-sora text-[16px] text-[#7a7a7a] md:text-[14.592px] lg:text-[16px]">
+                <ul className="list-inside list-none pt-0 font-sora text-[16px] text-[#7a7a7a] md:text-[14.592px] lg:text-[16px]">
                   {content.map((item, contentIndex) => (
                     <li key={`${contentIndex}-${item}`}>{item}</li>
                   ))}
@@ -489,7 +673,7 @@ export const WhatWillYouSee = () => {
                         : 'Icone de com silhueta feminina'
                     }
                   />
-                  <span className='text-lg md:text-xl'>{item.content}</span>
+                  <span className="text-lg md:text-xl">{item.content}</span>
                   <div className="mt-auto flex flex-col items-center">
                     <span className="line-clamp-1 text-[#7ed956]">
                       {item.author}
