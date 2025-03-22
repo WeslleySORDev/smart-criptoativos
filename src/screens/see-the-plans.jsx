@@ -43,7 +43,7 @@ export const SeeThePlans = () => {
                     </li>
                   </ul>
                 </li>
-                <li className="capitalize">
+                {/* <li className="capitalize">
                   2 E-BOOKS EXCLUSIVOS PARA OS ALUNOS
                   <ul className="pt-0 font-sora text-[14.592px] text-[#7a7a7a] lg:text-[16px]">
                     <li className="capitalize">Guia do Metaverso</li>
@@ -51,7 +51,7 @@ export const SeeThePlans = () => {
                       Manual da Blockchain - Tecnologia do Futuro
                     </li>
                   </ul>
-                </li>
+                </li> */}
               </ul>
               <div className="flex w-full justify-center">
                 <h3 className="cut-through mb-[10px] text-center text-[50px]/[1em] font-semibold uppercase text-[#ff3900]">

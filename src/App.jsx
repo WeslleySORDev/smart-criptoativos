@@ -20,7 +20,7 @@ import { TalkToUs } from './screens/talk-to-us'
 import { WhatWillYouSee } from './screens/what-will-you-see'
 import { Footer } from './screens/footer'
 
-const telefone = '5511933724537'
+const telefone = '5511953219466'
 
 export default function App() {
   const [isKeyboardOpen, setIsKeyboardOpen] = useState(false)

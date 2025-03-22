@@ -489,7 +489,7 @@ export const WhatWillYouSee = () => {
                         : 'Icone de com silhueta feminina'
                     }
                   />
-                  <span>{item.content}</span>
+                  <span className='text-lg md:text-xl'>{item.content}</span>
                   <div className="mt-auto flex flex-col items-center">
                     <span className="line-clamp-1 text-[#7ed956]">
                       {item.author}
