@@ -23,7 +23,7 @@ export const Footer = () => {
       </div>
       <span className="text-center text-xs">
         <a
-          class="mx-auto py-2 hover:underline"
+          className="mx-auto py-2 hover:underline"
           target="__blank"
           href="https://www.linkedin.com/in/weslleysordev/"
         >
