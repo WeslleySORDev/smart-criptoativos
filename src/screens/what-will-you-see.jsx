@@ -613,7 +613,10 @@ export const WhatWillYouSee = () => {
                 </h3>
                 <ul className="list-inside list-none pt-0 font-sora text-[16px] text-[#7a7a7a] md:text-[14.592px] lg:text-[16px]">
                   {content.map((item, contentIndex) => {
-                    if (!item.startsWith('(BÔNUS) AULA PRÁTICA') || width > 640) {
+                    if (
+                      !item.startsWith('(BÔNUS) AULA PRÁTICA') ||
+                      width > 640
+                    ) {
                       return (
                         <li
                           className="text-justify"
@@ -625,9 +628,11 @@ export const WhatWillYouSee = () => {
                     }
                     return null
                   })}
-                  <li className="text-justify font-extrabold sm:hidden">
-                    AULAS PRÁTICAS
-                  </li>
+                  {index < modules.length - 1 ? (
+                    <li className="text-justify font-extrabold sm:hidden">
+                      AULAS PRÁTICAS
+                    </li>
+                  ) : null}
                 </ul>
               </div>
             </div>
