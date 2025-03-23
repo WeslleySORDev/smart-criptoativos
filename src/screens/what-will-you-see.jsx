@@ -608,7 +608,7 @@ export const WhatWillYouSee = () => {
                 )}
               </div>
               <div>
-                <h3 className="text-[25px]/[1.2em] font-medium text-[#f8f8f8] md:text-[2.5vw] lg:text-[1.5vw]">
+                <h3 className="text-[25px]/[1.2em] md:text-[2.5vw] lg:text-[1.5vw] font-medium text-[#f8f8f8]">
                   {title}
                 </h3>
                 <ul className="list-inside list-none pt-0 font-sora text-[16px] text-[#7a7a7a] md:text-[14.592px] lg:text-[16px]">
