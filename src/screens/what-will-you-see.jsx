@@ -680,7 +680,7 @@ export const WhatWillYouSee = () => {
                 key={`${item.author} - ${item.content}`}
                 className="mx-2 h-[448px]"
               >
-                <div className="flex h-full flex-col items-center gap-4 rounded bg-zinc-900 px-10 py-4">
+                <div className="select-none flex h-full flex-col items-center gap-4 rounded bg-zinc-900 px-10 py-4">
                   <img
                     className="h-16 w-16"
                     src={

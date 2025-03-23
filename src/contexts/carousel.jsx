@@ -12,8 +12,8 @@ const CarouselContext = createContext({})
 
 export const CarouselProvider = ({ children }) => {
   const [carouselRef, carouselApi] = useEmblaCarousel(
-    { align: 'start', loop: true, dragFree: true },
-    [Autoplay({ playOnInit: true, delay: 4000 })],
+    { align: 'start', loop: true },
+    [Autoplay({ playOnInit: true, delay: 4000, stopOnInteraction: false })],
   )
   const [canScrollPrev, setCanScrollPrev] = useState(false)
   const [canScrollNext, setCanScrollNext] = useState(false)
