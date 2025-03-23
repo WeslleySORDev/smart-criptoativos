@@ -1,4 +1,5 @@
 import { Carousel, CarouselContent, CarouselItem } from '../components/carousel'
+import useWindowDimensions from '../hooks/useWindowDimensions'
 
 const data = [
   '1.png',
@@ -587,6 +588,8 @@ function formatEpochToDate(epochString) {
 }
 
 export const WhatWillYouSee = () => {
+  const { height, width } = useWindowDimensions()
+
   return (
     <section className="mx-auto flex flex-col items-center gap-[10px] bg-[#131313] py-[90px]">
       <div className="w-full px-2">
@@ -595,11 +598,11 @@ export const WhatWillYouSee = () => {
             <div className="md:flex md:gap-4" key={`${index}-${title}`}>
               <div className="flex">
                 {index === 0 ? (
-                  <span className="mb-[25px] block h-fit w-full min-w-36 md:w-[170px] rounded-lg bg-zinc-800 px-4 py-8 text-center text-xl font-semibold uppercase text-[#7ed956] ring-1 ring-[#7ed956]">
+                  <span className="mb-[25px] block h-fit w-full min-w-36 rounded-lg bg-zinc-800 px-4 py-8 text-center text-xl font-semibold uppercase text-[#7ed956] ring-1 ring-[#7ed956] md:w-[170px]">
                     Apresentação
                   </span>
                 ) : (
-                  <span className="mb-[25px] block h-fit w-full min-w-36 md:w-[170px] rounded-lg bg-zinc-800 px-4 py-8 text-center text-xl font-semibold uppercase text-[#7ed956] ring-1 ring-[#7ed956]">
+                  <span className="mb-[25px] block h-fit w-full min-w-36 rounded-lg bg-zinc-800 px-4 py-8 text-center text-xl font-semibold uppercase text-[#7ed956] ring-1 ring-[#7ed956] md:w-[170px]">
                     Módulo {index}
                   </span>
                 )}
@@ -609,9 +612,22 @@ export const WhatWillYouSee = () => {
                   {title}
                 </h3>
                 <ul className="list-inside list-none pt-0 font-sora text-[16px] text-[#7a7a7a] md:text-[14.592px] lg:text-[16px]">
-                  {content.map((item, contentIndex) => (
-                    <li key={`${contentIndex}-${item}`}>{item}</li>
-                  ))}
+                  {content.map((item, contentIndex) => {
+                    if (!item.startsWith('(BÔNUS) AULA PRÁTICA') || width > 640) {
+                      return (
+                        <li
+                          className="text-justify"
+                          key={`${contentIndex}-${item}`}
+                        >
+                          {item}
+                        </li>
+                      )
+                    }
+                    return null
+                  })}
+                  <li className="text-justify font-extrabold sm:hidden">
+                    AULAS PRÁTICAS
+                  </li>
                 </ul>
               </div>
             </div>
