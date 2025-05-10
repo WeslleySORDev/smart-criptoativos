@@ -64,15 +64,15 @@ export const SeeThePlans = () => {
               <h3 className="mb-[10px] flex flex-col gap-[10px_20px] text-center text-[25px]/[1em] font-semibold uppercase md:text-[3.5vw] lg:text-[2.5vw]">
                 Garanta tudo isso por apenas 12x de{' '}
                 <b className="mx-auto flex items-center gap-[5px_10px] text-[#7ed956]">
-                  R$ <span className="text-[50px]/[1em]">108,52</span>
+                  R$ <span className="text-[50px]/[1em]">124,00</span>
                 </b>
-                à vista por R$ 1.049,30
+                à vista por R$ 1.199,00
               </h3>
-
-              <p className="mb-4 flex flex-col gap-[10px_20px] text-center text-2xl font-bold uppercase text-[#7ed956] md:text-[3.5vw] lg:text-[2.5vw]">
+              {/* Caso queira colocar cupom novamente, apenas descomentar. */}
+              {/* <p className="mb-4 flex flex-col gap-[10px_20px] text-center text-2xl font-bold uppercase text-[#7ed956] md:text-[3.5vw] lg:text-[2.5vw]">
                 CUPOM DESCONTO 30%:{' '}
                 <span className="text-4xl lg:text-[4vw]">SMART30</span>
-              </p>
+              </p> */}
 
               <Button
                 asChild
